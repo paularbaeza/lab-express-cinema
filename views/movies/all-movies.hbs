@@ -1,0 +1,8 @@
+<h1>Aquí estarían las películas</h1>
+{{#each moviesArr}}
+  <div id="movie-preview">
+    <p>{{this.title}}</p>
+    <img src="{{this.image}}" alt="movie image" width="200px" />
+    <a href="/movies/{{this._id}}">See more </a>
+  </div>
+{{/each}}
