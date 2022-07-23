@@ -1,8 +1,13 @@
-<h1>Aquí estarían las películas</h1>
-{{#each moviesArr}}
-  <div id="movie-preview">
-    <p>{{this.title}}</p>
-    <img src="{{this.image}}" alt="movie image" width="200px" />
-    <a href="/movies/{{this._id}}">See more </a>
-  </div>
-{{/each}}
+<div id="movies-heading">
+  <h1>Ironhack Cinema</h1>
+  <h3>Click on the movie to check the showtimes!</h3>
+</div>
+<div id="each-movie">
+  {{#each moviesArr}}
+    <div id="movie-preview">
+      <img src="{{this.image}}" alt="movie image" width="200px" />
+      <p>{{this.title}}</p>
+      <a href="/movies/{{this._id}}">See more </a>
+    </div>
+  {{/each}}
+</div>

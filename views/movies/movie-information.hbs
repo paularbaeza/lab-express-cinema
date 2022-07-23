@@ -1,21 +1,26 @@
-<a href="/movies">Go back</a>
 
-<img src="{{movieChosen.image}}" alt="movie image">
+<div id= "information-picture">
+<img src="{{movieChosen.image}}" alt="movie image" width="200px" height="300px">
 <div id="information">
+    <a href="/movies">Go back</a>
     <h1>{{movieChosen.title}}</h1>
     <h2>Director: {{movieChosen.director}}</h2>
     <div id= "stars"><h3>Stars</h3>
     
     {{#each movieChosen.stars}}
      
-    <ul></ul>
+    <ul>
         <li>{{this}} </li>
     </ul>
     {{/each}}
     </div>
-
-    <p>{{movieChosen.description}}</p>
-    {{#each movieChosen.showtimes}}
-       <p> {{this}} | </p>
-    {{/each}}
+    <div id="description">
+        <p>{{movieChosen.description}}</p>
+    </div>
+    <div id="showtimes">
+        {{#each movieChosen.showtimes}}
+            <p>{{this}} | </p>   
+        {{/each}}
+    </div>
+</div>
 </div>

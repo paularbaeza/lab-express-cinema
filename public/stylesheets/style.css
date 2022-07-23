@@ -37,3 +37,52 @@ align-items:center;
   margin-bottom: 10px;
   margin-left:450px;
 }
+
+#each-movie{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movie-preview{
+  margin: 30px 70px 30px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#movie-preview p {
+  font-weight: bold ;
+}
+
+#movies-heading{
+  margin-left:120px;
+}
+
+#information-picture{
+  display:flex;
+  flex-direction: row;
+}
+
+#information{
+  margin-left:20px;
+}
+
+#showtimes{
+  display: flex;
+  flex-direction: row;
+}
+
+#showtimes p{
+  margin:3px;
+}
+
+#description{
+  width:700px;
+}
+
+#stars ul{
+  margin:2px;
+  padding-left: 15px;
+}
