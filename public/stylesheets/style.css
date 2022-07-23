@@ -7,9 +7,33 @@ a {
   color: #00B7FF;
 }
 
+#landing-page{
+background-image: url("../images/cinema.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: auto;
+height: 600px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items:center;
+}
+
 #check-movies{
-  background-color: aquamarine;
-  color:blue;
-  border-radius: 20px;
-  padding:10px;
+  background-color: white;
+  color:#3F78BC;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  padding:15px 30px 15px 30px;
+  margin-left:280px;
+  box-shadow: 1px 1px 15px 2px black
+}
+
+#landing-page h1{
+  color:white;
+  font-size: 100px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  margin-left:450px;
 }
